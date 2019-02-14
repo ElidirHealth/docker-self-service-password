@@ -141,11 +141,13 @@ if [ ! -f /tmp/state/10-nginx ]; then
 	   echo "** [self-service-password] Self Service Password Not Found, Installing..."
 	   mkdir -p /www/ssp/
 	   tar xfz /assets/install/v${SSP_VERSION}.tar.gz --strip 1 -C /www/ssp
+           cp /assets/ssp/scienap_logo.png /www/ssp/images/
 	   chown nginx:www-data /www/ssp
 	   echo "** [self-service-password] Installation Complete"
 	fi
 
 	cp -R /assets/ssp/config.inc.php.template /www/ssp/conf/config.inc.local.php
+        
 
 	### Force Reset Permissions for Security
 	chown -R nginx:www-data /www/ssp

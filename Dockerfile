@@ -1,5 +1,5 @@
 FROM tiredofit/nginx-php-fpm:7.2
-LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
+LABEL maintainer="Scienap (support at scienap dot com)"
 
 ### Environment Variables
 ENV SSP_VERSION=1.3

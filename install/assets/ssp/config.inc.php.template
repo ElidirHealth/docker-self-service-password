@@ -32,6 +32,14 @@ $ldap_login_attribute = "<LDAP_LOGIN_ATTRIBUTE>";
 $ldap_fullname_attribute = "<LDAP_FULLNAME_ATTRIBUTE>";
 $ldap_filter = "(&(objectClass=*)($ldap_login_attribute={login}))";
 
+
+# Logo
+
+
+# Background image
+$background_image = "";
+
+
 # Active Directory mode
 # true: use unicodePwd as password field
 # false: LDAPv3 standard behavior
@@ -209,7 +217,7 @@ $sms_token_length = 6;
 $max_attempts = 3;
 
 # Reset URL (if behind a reverse proxy)
-#$reset_url = $_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'];
+#$reset_url = "https://" . $_SERVER['HTTP_HOST']. "/pass/";
 
 # Display help messages
 $show_help = true;
@@ -221,10 +229,9 @@ $lang ="<LANG>";
 $show_menu = true;
 
 # Logo
-$logo = "<LOGO>";
-
+$logo = "images/scienap_logo.png";
 # Background image
-$background_image = "<BACKGROUND>";
+$background_image = "";
 
 # Debug mode
 $debug = <DEBUG_MODE>;
