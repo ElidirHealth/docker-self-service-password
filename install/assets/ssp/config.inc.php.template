@@ -229,7 +229,7 @@ $lang ="<LANG>";
 $show_menu = true;
 
 # Logo
-$logo = "images/scienap_logo.png";
+$logo = "images/logo.png";
 # Background image
 $background_image = "";
 
