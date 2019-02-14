@@ -217,7 +217,7 @@ $sms_token_length = 6;
 $max_attempts = 3;
 
 # Reset URL (if behind a reverse proxy)
-#$reset_url = "https://" . $_SERVER['HTTP_HOST']. "/pass/";
+#$reset_url = "https://" . $_SERVER['HTTP_X_FORWARDED_SERVER']. "/pass/";
 
 # Display help messages
 $show_help = true;
