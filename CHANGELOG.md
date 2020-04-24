@@ -1,3 +1,55 @@
+## 5.0.2 2020-04-08 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Cleanup Docker Compose Example
+      - Fix to allow spaces in LDAP_BIND_DN, LDAP_BASE_SEARCH, and LDAP_FILTER environment variables
+
+
+## 5.0.1 2020-02-26 <dave at tiredofit dot ca>
+
+   ### Added
+      - Add ability to set SITE_URL environment variable if IS_BEHIND_PROXY=true
+
+
+## 5.0.0 2020-02-26 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Rewrote entire image
+      - Added multiple new environment variables
+      - Option to run solely off of environment variables without mapping data volumes
+      - Option to overwrite files inside image without having to expose source volume
+      - Ability to switch to manual configuration mode without requiring all environment variables
+      - Set Sane Defaults
+      - Cleanup
+      
+      
+## 4.1.1 2020-01-02 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Additional changes to support new tiredofit/alpine base image
+
+
+## 4.1.0 2019-12-29 <dave at tiredofit dot ca>
+
+   ### Added
+      - Update to support new tiredofit/alpine base image
+
+
+## 4.0.1 2019-12-19 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Allow for dynamic user/group for nginx
+
+
+## 4.0 2019-12-06 <dave at tiredofit dot ca>
+
+* Refactored Image to support new tiredofit/nginx-php-fpm image
+* PHP 7.3
+
+## 3.1 2019-02-15 <dave at tiredofit dot ca>
+
+* Add USE_TOKENS
+
 ## 3.0.1 2019-01-04 <dave at tiredofit dot ca>
 
 * Fix regression with `IS_BEHIND_PROXY`
